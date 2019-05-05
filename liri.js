@@ -134,30 +134,7 @@ function concertInfo() {
  };
 
 
-var movieName = process.argv[2];
-
-// axios.get(`http://www.omdbapi.com/?apikey=${keys.OMdB.key}=&t=back to the future`)
-
-var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=[trilogy]";
-
-    axios.get(queryURL).then(
-    movieThis = function () {
-      console.log("Title: " + movieResponse.data.Title);
-      console.log("Year: " + movieResponse.data.Year);
-      console.log("Rated: " + movieResponse.data.Rated);
-      console.log("Country: " + movieResponse.data.Country);
-      console.log("Language: " + movieResponse.data.Language);
-      console.log("Plot: " + movieResponse.data.Plot);
-      console.log("Actors: " + movieResponse.data.Actors) ;
-      console.log(": " + movieResponse.data.Rating[1].Value);
-     })
+  
    
-     .catch(function (error) {
-      console.log(error);
-    });
-
-
-
-movieThis();
-
-
+       
+     
