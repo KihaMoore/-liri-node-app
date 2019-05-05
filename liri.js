@@ -134,21 +134,6 @@ function concertInfo() {
  };
 
 
-
-
-
-
-
-// var concertThis = function () {
-
-// }
-
-// var spotifyThisSong = function () {
-    
-//     var spotify = new Spotify(keys.spotify);
-
-// }
-
 var movieName = process.argv[2];
 
 // axios.get(`http://www.omdbapi.com/?apikey=${keys.OMdB.key}=&t=back to the future`)
@@ -165,12 +150,9 @@ var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey
       console.log("Plot: " + movieResponse.data.Plot);
       console.log("Actors: " + movieResponse.data.Actors) ;
       console.log(": " + movieResponse.data.Rating[1].Value);
-    
-    
-    
-    
-    })
-    .catch(function (error) {
+     })
+   
+     .catch(function (error) {
       console.log(error);
     });
 
@@ -178,7 +160,4 @@ var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey
 
 movieThis();
 
-// var doWhatItSays = function () {
-
-// }
 
