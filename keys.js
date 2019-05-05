@@ -1,12 +1,15 @@
-console.log('this is loaded');
+// console.log('this is loaded');
+
 
 exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
-};
-
-
-exports.OMdB = {
-  key: process.env.OMdB_KEY
 }
-// console.log(OMdB.key)
+
+exports.bands = {
+  id: process.env.BANDSINTOWN_API_KEY
+}
+
+exports.movies = {
+  id: process.env.OMdB_KEY
+}
